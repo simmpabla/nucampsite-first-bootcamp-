@@ -29,6 +29,9 @@
                         <h1>Nucamp</h1>
                         <h2>a better way to camp</h2>
                     </div>
+                    <div class="col-md-4 col-xl-2 col-12 mt-4">
+                        <a href="#reserveForm"><button type="button" class="btn btn-info text-light">Reserve Campsite</button></a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -77,10 +80,14 @@
                     <h2>Featured Campsites</h2>
                 </div>
                 <div class="col">
-                    <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers</p>
+                    <div class="d-flex">
+                        <div class="align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers</p>
+                        </div>
+                        <img src="img/react-lake-thumb.jpg" class="me-3 img-thumbnail" alt="React Lake" />
+                    
                 </div>
-                
             </section>
 
             <!--partner section-->
@@ -90,7 +97,7 @@
                 </div>
                 <div class="col">
                     <div class="d-flex">
-                        <img src="img/bootstrap-thumb.png" class="me-3 img-thumbnail" alt="Bootstrap Outfitters" />
+                        <img src="img/bootstrap-thumb.png" class="ms-3 img-thumbnail" alt="Bootstrap Outfitters" />
                         <div class="align-self-center">
                             <h3>Bootstrap Outfitters</h3>
                             <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p> 
@@ -99,6 +106,46 @@
                 </div>
             </section>
 
+            <section class="row row-content">
+                <div class="col-sm-9 mx-auto">
+                    <div class="card">
+                        <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
+                        <div class="card-body">
+                            <form id="reserveForm">
+                                <div class="row mb-3">
+                                    <div class="col-12 col-sm-6 col-form-label">
+                                        <label for="numberofcampers">Number of Campers</label>
+                                    </div>
+                                     <div class="col-12 col-sm-6">   
+                                        <select class="form-control" id="numberofcampers" name="numberofcampers">
+                                            <option selected>Select</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 col-sm-6 col-form-label">
+                                        <label for="date">Date</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input class="form-control" type="date" id="date" name="date" placeholder="1/1/2000" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <button type="submit" class="btn bg-primary">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!--footer-->
