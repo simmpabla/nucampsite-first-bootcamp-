@@ -47,6 +47,8 @@ footer {
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, .5);
+    /*This will give a background color of black but only at 50% opacity because of
+    the .5 alpha value */
 }
 
 .carousel {
